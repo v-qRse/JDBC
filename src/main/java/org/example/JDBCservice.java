@@ -47,7 +47,7 @@ public class JDBCservice {
          resultSet = statement.getResultSet();
          return resultExecute;
       } catch (SQLException e) {
-         throw new Exception("Невозможно выполнить заданный sql-запрос");
+         throw new Exception("Невозможно выполнить заданный sql-запрос \n" + e);
       }
    }
 
